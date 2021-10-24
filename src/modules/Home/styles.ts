@@ -9,10 +9,10 @@ export const Container = styled.SafeAreaView`
 `;
 export const Title = styled.Text`
   font-size: ${RFValue(20)}px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.black};
   font-weight: bold;
 `;
 export const Description = styled.Text`
   font-size: ${RFValue(16)}px;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.black};
 `;

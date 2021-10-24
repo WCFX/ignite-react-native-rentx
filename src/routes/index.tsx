@@ -2,14 +2,14 @@ import React from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import * as View from '~/screens';
+import * as NAVIGATORS from '~/modules';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
 const routes: React.FC = () => {
   return (
     <Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
-      <Screen name="Home" component={View.Home} />
+      <Screen name="Home" component={NAVIGATORS.Home} />
     </Navigator>
   );
 };

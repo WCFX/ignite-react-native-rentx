@@ -9,7 +9,7 @@ import * as S from './styles';
 const Home = () => {
   return (
     <S.Container>
-      <S.Title>Hello Motherfuckers</S.Title>
+      <S.Title>Hello Motherfuckers </S.Title>
       <S.Description>Wagnifico na parada</S.Description>
     </S.Container>
   );
