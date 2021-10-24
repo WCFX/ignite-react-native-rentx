@@ -11,7 +11,10 @@ const Home = () => {
   return (
     <S.Container>
       <S.Header>
-        <Logo />
+        <S.HeaderContent>
+          <Logo />
+          <S.TotalCars>Total de 12 carros</S.TotalCars>
+        </S.HeaderContent>
       </S.Header>
       <S.Content>
         <S.Title>Hello Motherfuckers </S.Title>
