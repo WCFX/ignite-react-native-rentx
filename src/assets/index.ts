@@ -1,0 +1,15 @@
+export { default as acceleration } from './svg/acceleration';
+export { default as arrow } from './svg/arrow';
+export { default as brand } from './svg/brand';
+export { default as car } from './svg/car';
+export { default as done } from './svg/done';
+export { default as energy } from './svg/energy';
+export { default as exchange } from './svg/exchange';
+export { default as force } from './svg/force';
+export { default as gasoline } from './svg/gasoline';
+export { default as home } from './svg/home';
+export { default as hybrid } from './svg/hybrid';
+export { default as logo } from './svg/logo';
+export { default as logo_background } from './svg/logo_background';
+export { default as people } from './svg/people';
+export { default as speed } from './svg/speed';

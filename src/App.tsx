@@ -1,8 +1,8 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
+import { StatusBar } from 'react-native';
 
-import {NavigationContainer} from '@react-navigation/native';
-import {ThemeProvider} from 'styled-components';
+import { NavigationContainer } from '@react-navigation/native';
+import { ThemeProvider } from 'styled-components';
 
 import theme from './styles';
 
@@ -13,7 +13,11 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <NavigationContainer>
         <Routes />
-        <StatusBar barStyle="dark-content" />
+        <StatusBar
+          barStyle="light-content"
+          translucent
+          backgroundColor="transparent"
+        />
       </NavigationContainer>
     </ThemeProvider>
   );
