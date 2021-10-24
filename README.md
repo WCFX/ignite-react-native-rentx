@@ -1,0 +1,1 @@
+## Estrutura padrão projeto rentX
