@@ -3,6 +3,8 @@ import { Dimensions } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
+import { CardCarProps } from '.';
+
 const { width, height } = Dimensions.get('window');
 
 export const Container = styled.View`
@@ -47,14 +49,14 @@ export const Name = styled(uppercase)`
   font-weight: 600;
 `;
 
-export const Infoday = styled(BrandName)``;
+export const Period = styled(BrandName)``;
 
 export const Price = styled(uppercase)`
   font-size: ${RFValue(16)}px;
   color: ${({ theme }) => theme.colors.main};
 `;
 
-export const Type = styled.View``;
+export const Type = styled.Text``;
 
 export const ContainerCar = styled.View`
   width: ${width * 0.6}px;

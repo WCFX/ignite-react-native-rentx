@@ -1,4 +1,4 @@
-import { Dimensions, Platform } from 'react-native';
+import { Dimensions, FlatList, Platform } from 'react-native';
 
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
@@ -26,7 +26,12 @@ export const Header = styled.View`
 export const TotalCars = styled.Text`
   color: ${({ theme }) => theme.colors.text};
 `;
-export const Content = styled.ScrollView``;
+export const CarList = styled(FlatList).attrs({
+  contentContainerStyle: {
+    padding: 20,
+  },
+  showsVerticalScrollIndicator: false,
+})``;
 
 export const Title = styled.Text`
   font-size: ${RFValue(20)}px;

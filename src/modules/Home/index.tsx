@@ -1,5 +1,7 @@
 import React from 'react';
 
+import shortid from 'shortid';
+
 import { Logo } from '~/assets';
 import { CardCar } from '~/components';
 
@@ -8,6 +10,18 @@ import { CardCar } from '~/components';
 import * as S from './styles';
 
 const Home = () => {
+  const products = {
+    brand: 'audi',
+    name: 'rs6 avant',
+    rent: {
+      period: 'ao dia',
+      price: 340,
+    },
+    // type: 'gasoline',
+    photo:
+      'https://production.autoforce.com/uploads/version/profile_image/5035/model_main_comprar-tiptronic_c48874ad37.png',
+  };
+
   return (
     <S.Container>
       <S.Header>
@@ -16,32 +30,11 @@ const Home = () => {
           <S.TotalCars>Total de 12 carros</S.TotalCars>
         </S.HeaderContent>
       </S.Header>
-      <S.Content>
-        <CardCar
-          brandname="audi"
-          name="rs6 avant"
-          infoday="ao dia"
-          price="340"
-          type="gasoline"
-          car="https://production.autoforce.com/uploads/version/profile_image/5035/model_main_comprar-tiptronic_c48874ad37.png"
-        />
-        <CardCar
-          brandname="audi"
-          name="rs6 avant"
-          infoday="ao dia"
-          price="340"
-          type="energy"
-          car="https://production.autoforce.com/uploads/version/profile_image/5035/model_main_comprar-tiptronic_c48874ad37.png"
-        />
-        <CardCar
-          brandname="audi"
-          name="rs6 avant"
-          infoday="ao dia"
-          price="340"
-          type="energy"
-          car="https://production.autoforce.com/uploads/version/profile_image/5035/model_main_comprar-tiptronic_c48874ad37.png"
-        />
-      </S.Content>
+      <S.CarList
+        data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+        keyExtractor={shortid.generate}
+        renderItem={({ item }) => <CardCar data={products} />}
+      />
     </S.Container>
   );
 };
