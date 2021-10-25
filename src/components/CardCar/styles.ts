@@ -16,7 +16,7 @@ export const Container = styled.View`
 `;
 
 export const ContentInfo = styled.View`
-  width: ${width * 0.35}px;
+  width: ${width * 0.3}px;
   justify-content: space-between;
 
   height: 100%;
@@ -41,14 +41,15 @@ export const BrandName = styled(uppercase)`
 `;
 
 export const Name = styled(uppercase)`
-  font-size: ${RFValue(13)}px;
+  font-size: ${RFValue(16)}px;
+  color: ${({ theme }) => theme.colors.shape_dark};
   font-weight: 600;
 `;
 
 export const Infoday = styled(BrandName)``;
 
 export const Price = styled(uppercase)`
-  font-size: ${RFValue(13)}px;
+  font-size: ${RFValue(16)}px;
   color: ${({ theme }) => theme.colors.main};
 `;
 

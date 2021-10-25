@@ -22,7 +22,7 @@ const Home = () => {
           name="rs6 avant"
           infoday="ao dia"
           price="340"
-          type="gasoline"
+          type="energy"
         />
       </S.Content>
     </S.Container>

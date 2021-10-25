@@ -3,7 +3,7 @@ interface CardCarProps {
   name: string;
   infoday: string;
   price: string;
-  type: 'gasoline' | 'hybrid';
+  type: 'gasoline' | 'energy';
 }
 
 export default CardCarProps;
