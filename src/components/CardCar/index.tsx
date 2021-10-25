@@ -1,4 +1,5 @@
 import React from 'react';
+import { TouchableOpacityProps } from 'react-native';
 
 import { Energy, Gasoline } from '~/assets';
 // import { CardCarProps } from '~/types';
@@ -16,13 +17,13 @@ export interface CardCarProps {
   photo: string;
 }
 
-interface Props {
+interface Props extends TouchableOpacityProps {
   data: CardCarProps;
 }
 
-const CardCar = ({ data }: Props) => {
+const CardCar = ({ data, ...rest }: Props) => {
   return (
-    <S.Container>
+    <S.Container {...rest}>
       <S.ContentInfo>
         <S.Separator>
           <S.BrandName>{data.brand}</S.BrandName>

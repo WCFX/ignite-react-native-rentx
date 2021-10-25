@@ -6,10 +6,11 @@ import * as NAVIGATORS from '~/modules';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
-const routes: React.FC = () => {
+const routes = () => {
   return (
     <Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
       <Screen name="Home" component={NAVIGATORS.Home} />
+      <Screen name="CarDetail" component={NAVIGATORS.CarDetail} />
     </Navigator>
   );
 };

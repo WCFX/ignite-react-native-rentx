@@ -3,11 +3,9 @@ import { Dimensions } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
-import { CardCarProps } from '.';
-
 const { width, height } = Dimensions.get('window');
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   width: ${width * 0.9}px;
   background-color: ${({ theme }) => theme.colors.white};
   height: ${height * 0.15}px;

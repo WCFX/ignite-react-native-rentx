@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { NavigationRouteContext, useNavigation } from '@react-navigation/core';
 import shortid from 'shortid';
 
 import { Logo } from '~/assets';
@@ -10,6 +11,8 @@ import { CardCar } from '~/components';
 import * as S from './styles';
 
 const Home = () => {
+  const { navigate } = useNavigation();
+
   const products = {
     brand: 'audi',
     name: 'rs6 avant',
@@ -33,7 +36,9 @@ const Home = () => {
       <S.CarList
         data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
         keyExtractor={shortid.generate}
-        renderItem={({ item }) => <CardCar data={products} />}
+        renderItem={({ item }) => (
+          <CardCar onPress={() => navigate('CarDetail')} data={products} />
+        )}
       />
     </S.Container>
   );
