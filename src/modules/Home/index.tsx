@@ -1,7 +1,7 @@
 import React from 'react';
 
-// import {  } from '~/components';
 import { Logo } from '~/assets';
+import { CardCar } from '~/components';
 
 // import {  } from '~/helpers';
 // import {  } from '~/types';
@@ -17,8 +17,13 @@ const Home = () => {
         </S.HeaderContent>
       </S.Header>
       <S.Content>
-        <S.Title>Hello Motherfuckers </S.Title>
-        <S.Description>Wagnifico na parada</S.Description>
+        <CardCar
+          brandname="audi"
+          name="rs6 avant"
+          infoday="ao dia"
+          price="340"
+          type="gasoline"
+        />
       </S.Content>
     </S.Container>
   );
