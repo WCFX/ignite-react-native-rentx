@@ -4,6 +4,7 @@ interface CardCarProps {
   infoday: string;
   price: string;
   type: 'gasoline' | 'energy';
+  car: string;
 }
 
 export default CardCarProps;

@@ -5,7 +5,14 @@ import { CardCarProps } from '~/types';
 
 import * as S from './styles';
 
-const CardCar = ({ brandname, name, infoday, price, type }: CardCarProps) => {
+const CardCar = ({
+  brandname,
+  name,
+  infoday,
+  price,
+  type,
+  car,
+}: CardCarProps) => {
   return (
     <S.Container>
       <S.ContentInfo>
@@ -21,6 +28,13 @@ const CardCar = ({ brandname, name, infoday, price, type }: CardCarProps) => {
           </S.ContainerPrice>
         </S.Separator>
       </S.ContentInfo>
+      <S.ContainerCar>
+        <S.Car
+          source={{
+            uri: car,
+          }}
+        />
+      </S.ContainerCar>
     </S.Container>
   );
 };

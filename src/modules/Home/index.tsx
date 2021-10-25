@@ -22,7 +22,24 @@ const Home = () => {
           name="rs6 avant"
           infoday="ao dia"
           price="340"
+          type="gasoline"
+          car="https://production.autoforce.com/uploads/version/profile_image/5035/model_main_comprar-tiptronic_c48874ad37.png"
+        />
+        <CardCar
+          brandname="audi"
+          name="rs6 avant"
+          infoday="ao dia"
+          price="340"
           type="energy"
+          car="https://production.autoforce.com/uploads/version/profile_image/5035/model_main_comprar-tiptronic_c48874ad37.png"
+        />
+        <CardCar
+          brandname="audi"
+          name="rs6 avant"
+          infoday="ao dia"
+          price="340"
+          type="energy"
+          car="https://production.autoforce.com/uploads/version/profile_image/5035/model_main_comprar-tiptronic_c48874ad37.png"
         />
       </S.Content>
     </S.Container>

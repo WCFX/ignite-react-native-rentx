@@ -26,7 +26,7 @@ export const Header = styled.View`
 export const TotalCars = styled.Text`
   color: ${({ theme }) => theme.colors.text};
 `;
-export const Content = styled.View``;
+export const Content = styled.ScrollView``;
 
 export const Title = styled.Text`
   font-size: ${RFValue(20)}px;

@@ -13,13 +13,14 @@ export const Container = styled.View`
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid ${({ theme }) => theme.colors.line};
 `;
 
 export const ContentInfo = styled.View`
   width: ${width * 0.3}px;
   justify-content: space-between;
-
-  height: 100%;
 `;
 
 export const Separator = styled.View``;
@@ -54,3 +55,13 @@ export const Price = styled(uppercase)`
 `;
 
 export const Type = styled.View``;
+
+export const ContainerCar = styled.View`
+  width: ${width * 0.6}px;
+  height: ${height * 0.15}px;
+`;
+
+export const Car = styled.Image`
+  width: 100%;
+  height: 100%;
+`;
